@@ -1,140 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" >
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>flex-box</title>
 </head>
 <body>
-<div class="wrapper"> 
-  <div class="flex">
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-</div>
-<div class="wrapper"> 
-  <div class="flex_1">
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-<div class="wrapper"> 
-  <div class="flex_2">
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-</div>
-<div class="wrapper_1"> 
-  <div class="flex_3_special" >
-    <div class="content "></div> 
-  </div>
-  <div class="flex_3">
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-</div>
-<div class="wrapper_1"> 
-  <div class="flex_4_special" >
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-  <div class="flex_4">
-    <div class="content"></div> 
-  </div>
-</div>
-<div class="wrapper_1"> 
-  <div class="flex_5_special" >
-    <div class="content_1 "></div> 
-    <div class="content_1"></div> 
-    <div class="content_1"></div> 
-  </div>
-  <div class="flex_5">
     
-    <div class="content_1"></div> 
-    <div class="content_1"></div> 
-  </div>
-</div>
-<div class="wrapper_1"> 
-  <div class="flex_6_special" >
-    <div class="content_1 "></div> 
-    <div class="content_1"></div> 
-    <div class="content_1"></div> 
-  </div>
-  <div class="flex_6">
-    
-    <div class="content_1"></div> 
-    <div class="content_1"></div> 
-  </div>
-</div>
-<div class="wrapper_1"> 
-  <div class="flex_7" >
-    <div class="content"></div> 
-    <div class="content"></div> 
-    <div class="wrapper_2">    
-      <div class="content content_2"></div> 
-  </div>
-    <div class="content"></div> 
-    <div class="content"></div> 
-  </div>
-</div>
-<div class="flex_8">
-    <div class="content"></div>  
-</div>
-<div class="flex_8">
-    <div class="content"></div>  
-    <div class="content"></div>  
-    <div class="content"></div>  
-</div>
+    <div class="wrapper gap-10">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
 
-<!--column-->
+    <div class="wrapper flex-justify-end gap-10">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
 
-<div class="wrapper_column_1">
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-</div>
+    <div class="wrapper flex-justify-between ga">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
 
-<div class="wrapper_column_2">
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-  <div class="content_column"></div>
-</div>
+    <div class="wrapper flex-justify-between gap-10">
+        <div class="content"></div>
+        <div class="wrapper reverse no-padding gap-10 ">
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+        </div>
+    </div>
 
-<div class="wrapper_column">
-  <div class="wrapper_column_1">
-    <div class="content_column"></div>
-    <div class="content_column"></div>
-</div>
-  <div class="wrapper_column_2">
-    <div class="content_column"></div>
-    <div class="content_column"></div>
-</div>
-</div>
+    <div class="wrapper reverse flex-justify-between">
+        <div class="content"></div>
+        <div class="wrapper no-padding gap-10 ">
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+        </div>
+    </div>
 
-<!-- special quest-->
-<div class="wrapper_column_dynamic"> 
-  <div class="add" ></div>
-  <div class="main" ></div>
-  <div class="add" ></div>
-</div>
+    <div class=" wrapper flex-justify-between gap-10">
+     <div class="wrapper flex-justify-start no-padding">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+     </div>
+     <div class="wrapper flex-justify-end no-padding align-center">
+        <div class="content"></div>
+        <div class="content"></div>
+     </div>
+    </div>
+ 
+    <div class="wrapper flex-justify-between gap-10">
+     <div class="wrapper flex-justify-between no-padding">
+        <div class="content"></div>
+        <div class="content "></div>
+     </div>
+     <div class="wrapper align-center flex-direction-column no-padding"> 
+        <div class="content flex-grow"></div>
+     </div>
+     <div class="wrapper flex-justify-between no-padding ">
+        <div class="content"></div>
+        <div class="content "></div>
+     </div>
+    </div>  
+        
+    <div class="wrapper flex-justify-center align-center">
+        <div class="content "></div>
+    </div> 
 
-<div class="wrapper_row_dynamic"> 
-  <div class="add_1" ></div>
-  <div class="add_1" ></div>
-  <div class="main_1" ></div>
-</div>
+    <div class="wrapper flex-justify-center align-center gap-10">
+        <div class="content "></div>
+        <div class="content "></div>
+        <div class="content "></div>
+    </div> 
 
+    <div class="wrapper-column flex-direction-column align-center gap-10-bottom">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+ 
+    <div class="wrapper-column flex-direction-column flex-justify-end align-center gap-10-bottom">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
 
+    <div class="wrapper-column flex-direction-column flex-justify-between align-center gap-10-bottom">
+     <div class="wrapper-column flex-direction-column flex-justify-start align-center">
+        <div class="content"></div>
+        <div class="content"></div>
+     </div>
+     <div class="wrapper-column flex-direction-column flex-justify-end align-center">
+        <div class="content"></div>
+        <div class="content"></div>
+     </div>
+    </div>
+
+    <div class="wrapper-column-flex flex-direction-column align-center gap-10-bottom"">
+        <div class="content width-full  flex-shrink"></div>
+        <div class="content width-full flex-grow"></div>
+        <div class="content width-full flex-shrink"></div>
+    </div>
+
+    <div class="wrapper align-center gap-10"">
+        <div class="content height-full flex-shrink"></div>
+        <div class="content height-full flex-shrink"></div>
+        <div class="content height-full flex-grow"></div>
+    </div>
 </body>
 </html>
